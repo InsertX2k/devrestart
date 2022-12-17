@@ -1,5 +1,5 @@
 # devrestart
-A small command line tool for restarting a single device on Windows-based PCs
+A small command line tool for creating Windows Services that can be used to restart a single device driver on Windows-based PCs
 
 ## Popular use cases of this tool
 You might need to make a service that automates the process of disabling and re-enabling a specific device driver on your computer, for some reason, you might need to do that in order to solve some hardware-related issues, and this tool will be really helpful in situations like these.
