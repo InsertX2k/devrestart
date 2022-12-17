@@ -25,4 +25,4 @@ You might need to make a service that automates the process of disabling and re-
   ```
   * Save all changes you did to that file.
 * Make changes to the file `install (Run as Admin).bat` if necessary, and run it as Administrator after that.
-* Reboot your computer and enjoy! :)
+* Restart your computer and enjoy! :)
