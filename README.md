@@ -30,5 +30,5 @@ devrestart.exe/<filename>.exe (number of attempts needed to restart the device)
   DeviceInstancePath=PCI\VEN_8086&DEV_1502&SUBSYS_052C1028&REV_04\3&11583659&0&C8
   ```
   * Save all changes you did to that file.
-* Make changes to the file `install (Run as Admin).bat` if necessary, and run it as Administrator after that.
+* Make your changes to the file `install (Run as Admin).bat` if necessary, and run it as Administrator after that.
 * Restart your computer and enjoy! :)
