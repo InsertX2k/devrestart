@@ -1,18 +1,18 @@
-# devrestart
-A small command line tool for restarting a single device on Windows-based PCs
+# devrestart2
+A small command line tool for restarting one or more devices on Windows-based PCs (as of devrestart2)
 
 ## Popular use cases of this tool
-You might need to make a service that automates the process of disabling and re-enabling a specific device driver on your computer, for some reason, you might need to do that in order to solve some hardware-related issues, and this tool will be really helpful in situations like these.
+You might need to make a service that automates the process of disabling and re-enabling a specific device(s) driver on your computer, for some reason, you might need to do that in order to solve some hardware-related issues, and this tool will be really helpful in situations like these.
 
 ## Command Line Syntax
 ```bat
-devrestart.exe/<filename>.exe (number of attempts needed to restart the device)
+devrestart2.exe/<filename>.exe (number of attempts needed to restart the device)
 ```
 * `(number of attempts needed to restart the device)` is an ***optional argument*** that can be used to define/describe the number of restart device attempts you want this service to do.
 
 ## How to use?
 * Download the code in this repository or clone it using `git`
-* Compile the file `main.py` using [pyinstaller](https://pypi.org/project/pyinstaller/) or any other compiler you like in one directory mode.
+* Compile the file `devrestart.py` using [pyinstaller](https://pypi.org/project/pyinstaller/) or any other compiler you like in one directory mode.
 * Download [NSSM](https://nssm.cc/)
 * Store both the compiled version of this tool and NSSM in an easy to access directory, such as `C:\test`
 * Enter the device instance path of the device you want to restart it's device driver every time your PC boots up in the file `info.ini`
@@ -22,13 +22,7 @@ devrestart.exe/<filename>.exe (number of attempts needed to restart the device)
   * Go to the **Details** Tab
   * Under **Property**, open that dropdown and choose **Device Instance Path**
   * Copy the text under the **value** label
-  * Open the file `info.ini` and Replace the text after the `DeviceInstancePath=` string with the **ID** you just copied
-  
-  Example:
-  ```ini
-  [RestartDevice]
-  DeviceInstancePath=PCI\VEN_8086&DEV_1502&SUBSYS_052C1028&REV_04\3&11583659&0&C8
-  ```
+  * Open the file `info.ini` and make the appropriate changes to it.
   * Save all changes you did to that file.
 * Make your changes to the file `install (Run as Admin).bat` if necessary, and run it as Administrator after that.
 * Restart your computer and enjoy! :)
