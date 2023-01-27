@@ -6,6 +6,9 @@ A small command line tool for restarting one or more devices on Windows-based PC
 * Introducing the `WakeUpMonitor` feature, it is a feature that allows the service to run in the background to monitor the power state of your computer and if the PC goes to sleep or hibernate and wakes up from it the service will attempt to restart the device(s) specified in `Info.ini` file
 
 **(This feature can be enabled or disabled by modifying it's appropriate value in `Info.ini`, Everything is explained there)**
+## Known issues in devrestart2:
+* The `WakeUpMonitor` may not detect when the computer wakes up from Sleep or hibernation power states.
+
 
 ## Popular use cases of this tool
 You might need to make a service that automates the process of disabling and re-enabling a specific device(s) driver on your computer, for some reason, you might need to do that in order to solve some hardware-related issues, and this tool will be really helpful in situations like these.
