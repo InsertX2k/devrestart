@@ -1,3 +1,15 @@
+##### I will no longer be providing updates for this program, it was useless anyway as you could just use Windows's built-in `pnputil` program to control devices <br>
+```bat
+rem to restart a device directly
+pnputil /restart-device [device instance path]
+
+rem to disable a device then re-enable it
+pnputil /disable-device [device instance path]
+pnputil /enable-device [device instance path]
+
+rem of course don't forget to replace [device instance path] with the actual instance path you will get from device manager.
+```
+
 # devrestart2
 A small command line tool for restarting one or more devices on Windows-based PCs (as of devrestart2)
 
